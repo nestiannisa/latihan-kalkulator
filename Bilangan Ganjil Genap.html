@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="ganjil-genap">
+            <div class="container ">
+            <h1>Bilangan Ganjil Genap</h1>
+            <h5>Nesti Annisa Suprianti</h5>
+            <br >
+            <!-- Input -->
+            <p>Bilangan <input type="number" id="input"> <button onclick="myFunction()">Cek</button></p>
+            <p id="cek"></p>
+            
+            <script>
+                //Perhitungan
+                function myFunction(){
+                    var bilangan = document.getElementById("input").value
+                    if(bilangan % 2 == 0)
+                        document.getElementById("cek").innerText = "Bilangan Genap"
+                    else
+                        document.getElementById("cek").innerText = "Bilangan Ganjil"
+                }
+            </script>
+                
+            </div>
+            
+        </section>
+    </body>
+
+</html>
